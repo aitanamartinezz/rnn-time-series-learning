@@ -1,4 +1,49 @@
+# Sentiment Analysis on Amazon Reviews using Recurrent Neural Networks
 
+This repository contains a deep learning project focused on **sentiment analysis**
+using **Recurrent Neural Networks (RNNs)** applied to textual data. The objective
+is to classify Amazon product reviews according to their sentiment by learning
+temporal patterns in natural language sequences.
+
+The project evaluates and compares different recurrent architectures, including
+**SimpleRNN**, **LSTM**, and **GRU**, analyzing how model configuration and
+hyperparameters impact classification performance.
+
+---
+
+## Problem Statement
+
+Sentiment analysis is a common Natural Language Processing (NLP) task that involves
+classifying text according to the expressed opinion or emotional tone. In this project,
+the task is formulated as a **supervised text classification problem**, where the goal
+is to predict the sentiment of a product review based on its textual content.
+
+The main challenges addressed include:
+- Modeling sequential dependencies in text
+- Handling variable-length input sequences
+- Understanding the impact of architectural and training choices on model performance
+
+---
+
+## Dataset Description
+
+The dataset consists of **Amazon product reviews**, where each review is associated
+with a numerical rating. Reviews are preprocessed and converted into labeled sentiment
+classes:
+
+- **Positive sentiment**: reviews with ratings of 4 or 5 stars  
+- **Negative sentiment**: reviews with ratings of 1 or 2 stars  
+
+The dataset is imbalanced, with a higher proportion of positive reviews. An initial
+exploratory analysis is performed to study label distribution, vocabulary size, and
+frequent terms.
+
+---
+
+## Repository Structure
+
+ - sentiment_analysis_rnn.ipynb # Main notebook with full implementation
+ - README.md # Project documentation
 ---
 
 ## Technologies
